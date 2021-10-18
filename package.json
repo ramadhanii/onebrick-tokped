@@ -1,0 +1,25 @@
+{
+  "name": "onebrick-test",
+  "version": "1.0.0",
+  "description": "Tokopedia Scraper",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "scrapper"
+  ],
+  "author": "ramadhani94.rd@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-google": "^0.14.0",
+    "playwright-chromium": "^1.3.0"
+  },
+  "dependencies": {
+    "csv-parser": "^2.3.3",
+    "numeral": "^2.0.6",
+    "superagent": "^6.1.0"
+  }
+}
