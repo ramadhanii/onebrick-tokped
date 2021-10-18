@@ -2,7 +2,7 @@ const { chromium } = require('playwright-chromium');
 const fs = require('fs');
 const pageUrl = "https://www.tokopedia.com/p/handphone-tablet/handphone"
 
-const maxProductToTake = 5;
+const maxProductToTake = 100;
 const singleProduct     = {
   "url": null,
   "name": null,
@@ -87,7 +87,7 @@ async function getProducts(url, pageNumber){
 
   const imageListEl = await page.$$(imgXpath);
   const imageUrlList = [];
-  counter = currIdx;
+  counter = 0;
   idx = currIdx;
   for (const p of imageListEl) {
     const actualPara = await page.evaluate(el => el.src, p)
